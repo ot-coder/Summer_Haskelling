@@ -1,8 +1,9 @@
 double x = x * 2
 b = tail [2,3,4,5,6]
 c = 5
-d = 8
+d = 7
 e x = d + x*2
+isEven n = mod n 2 == 0
 
 
 main = do
@@ -12,5 +13,7 @@ main = do
     let doubled = double number
     print doubled
     print (b)
-    print (e doubled)
-    
+    let myFunction = e doubled
+    print myFunction
+    print (isEven myFunction)
+
