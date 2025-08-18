@@ -8,8 +8,8 @@ isEven n = mod n 2 == 0
 sumList [] = 0
 sumList (x:xs) = x + sumList xs
 mult x d = x * d
-inc x = x + d
-f = map inc b
+inc d x = x + d
+f = map (inc d) b
 
 main = do
     putStrLn "Enter a number:"
